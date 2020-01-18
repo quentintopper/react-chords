@@ -3,6 +3,8 @@
   "description": "React library to easily render instrument chord diagrams",
   "version": "0.2.9",
   "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
@@ -12,13 +14,16 @@
     "standard": "^14.3.1"
   },
   "dependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "chords-db": "file:../chords-db/",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "scripts": {
-    "build": "babel src --out-dir lib",
-    "standard": "standard src"
+    "standard": "standard src",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

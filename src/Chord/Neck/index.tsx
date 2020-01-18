@@ -35,7 +35,6 @@ const Neck = ({ tuning, frets, strings, fretsOnChord, baseFret, capo, lite }) =>
       stroke='#444'
       strokeWidth='0.25'
       strokeLinecap='square'
-      strokeLinejoin='square'
       d={getNeckPath(strings, fretsOnChord)} />
     { baseFret === 1
       ? <path
